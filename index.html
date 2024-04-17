@@ -5,32 +5,165 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./css/estilos.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
 
-    <title>Document</title>
+    <!-- Script de Fontawesome -->
+    <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="./static/img/favicon.ico">
+
+    <title>CAVICU</title>
 </head>
 
 <body>
-    <header>
+    <!-- Encabezado -->
+    <header class="header">
+
         <nav>
+            <!-- Logo -->
+            <div id="logo">
+                <a href="/">
+                    <!-- Más adelante se aplicarán estilos específicos al texto y se agregará un ícono -->
+                    <i class="fas fa-film"></i>
+                    <span class="logo-text">CAVICU</span>
+                </a>
+            </div>
 
+            <!-- Hipervínculos del Menú -->
+            <ul class="nav-links">
+                <li>
+                    <a href="#planes">Planes</a>
+                </li>
+                <li>
+                    <a href="#grilla">Grilla TV</a>
+                </li>
+                <li>
+                    <a href="./templates/nosotros.html">Sobre Nosotros</a>
+                </li>
+                <li>
+                    <a href="./templates/contacto.html">Contacto</a>
+                </li>
+
+                
+                <li>
+                    <a class="btn-cac" href="#">
+                        <!-- Más adelante se aplicarán estilos específicos al texto y se agregará un ícono -->
+                        <i class="fas fa-sign-in-alt"></i>
+                        <span class="login-text">Abonados</span>
+                    </a>
+                </li>
+            </ul>
         </nav>
-
-
     </header>
 
+    <!-- Contenido -->
     <main>
-        <section>
+        
+        <!-- banner: una sección prominente en la parte superior de
+        una página que puede contener información destacada, como anuncios,
+        mensajes importantes, o un diseño gráfico distintivo. -->
+        <section id="banner">
             
-
+            <div class="container card-banner">
+                <h1>TV Digital + Internet</h1>
+                <h2></h2>
+                <a href="./templates/contacto.html" class="btn-cac">Solicitalo Ya</a>
+            </div>
         </section>
-        <section>
 
+        
+
+        <!-- popular: mostrar imágenes de las peliculas con tendencia hoy -->
+        <section id="planes">
+            <!-- División contenedora del título e imágenes -->
+            <div class="container">
+                <h2>Planes</h2>
+                <div id="list-popular">
+                    <div class="movie-item">
+                        <!-- <a href=""> -->
+                            <img src="./img/plan1.jpg" alt="" class="movie-item-img">
+                            <div class="movie-item-detail">
+                                <p class="movie-item-detail-title">TV Basica</p>
+                                <p class="movie-item-detail-title">TV Premium</p>
+                                <p class="movie-item-detail-subtitle">Abril - 2024</p>
+                            </div>
+                       <!-- </a> -->
+                    </div>
+                    <div class="movie-item">
+                        <!-- <a href=""> -->
+                            <img src="./img/plan2.jpg" alt="" class="movie-item-img">
+                            <div class="movie-item-detail">
+                                <p class="movie-item-detail-title">Internet</p>
+                                <p class="movie-item-detail-subtitle">Abril - 2024</p>
+                            </div>
+                        <!-- </a> -->
+                    </div>
+                    <div class="movie-item">
+                        <!-- <a href=""> -->
+                            <img src="./img/plan3.jpg" alt="" class="movie-item-img">
+                            <div class="movie-item-detail">
+                                <p class="movie-item-detail-title">Combos</p>
+                                <p class="movie-item-detail-subtitle">Abril - 2024</p>
+                            </div>
+                        <!-- </a> -->
+                    </div>
+                    <div class="movie-item">
+                        <!-- <a href=""> -->
+                            <img src="./img/plan4.jpg" alt="" class="movie-item-img">
+                            <div class="movie-item-detail">
+                                <p class="movie-item-detail-title">Pack Premium</p>
+                                <p class="movie-item-detail-subtitle">Abril - 2024</p>
+                            </div>
+                        <!-- </a> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- search: para implementar una barra de búsqueda en la página web -->
+<section id="search" class="container">
+    <h2 class="search-title">¿Busca en que numero esta el canal que queres?</h2>
+    <input type="text" class="input-search" placeholder="Buscar...">
+</section>
+
+        <!-- top-rated: mostrar las películas más aclamadas-->
+        <section id="grilla">
+            <!-- División contenedora del título e imágenes -->
+            <div class="container">
+                <h2>Grilla TV</h2>
+                <div id="list-popular">
+                    <!-- Info de las películas: mismo formato para todas -->
+                    <div class="movie-item">
+                        <div class="wrapper"> <img src="./img/grilla1.jpg" alt="" class="movie-item-img"> 
+                        </div>
+                        <div class="movie-item-detail-v2">
+                            <p class="movie-item-detail-title-v2">Grilla Basico Analogico-Digital</p>  
+                        </div>
+                        <div class="movie-item">
+                            <div class="wrapper"> <img src="./img/grilla2.jpg" alt="" class="movie-item-img"> 
+                            </div>
+                            <div class="movie-item-detail-v2">
+                                <p class="movie-item-detail-title-v2">Grilla Premium DIBOX</p>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
-
+    <!-- Pie -->
+    <footer id="footer">
+        <a href="">Términos y condiciones</a>
+        <a href="">Sobre nosotros</a>
+        <a href="">Contacto</a>
     </footer>
 
 </body>

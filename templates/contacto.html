@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+
+    <!-- Script de Fontawesome -->
+    <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="./static/img/favicon.ico">
+
+    <title>CAVICU</title>
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header class="header">
+
+        <nav>
+            <!-- Logo -->
+            <div id="logo">
+                <a href="/">
+                    <!-- Más adelante se aplicarán estilos específicos al texto y se agregará un ícono -->
+                    <i class="fas fa-film"></i>
+                    <span class="logo-text">CAVICU</span>
+                </a>
+            </div>
+
+            <!-- Hipervínculos del Menú -->
+            <ul class="nav-links">
+                <li>
+                    <a href="#planes">Planes</a>
+                </li>
+                <li>
+                    <a href="#grilla">Grilla TV</a>
+                </li>
+                <li>
+                    <a href="./nosotros.html">Sobre Nosotros</a>
+                </li>
+                <li>
+                    <a href="./contacto.html">Contacto</a>
+                </li>
+
+                
+                <li>
+                    <a class="btn-cac" href="#">
+                        <!-- Más adelante se aplicarán estilos específicos al texto y se agregará un ícono -->
+                        <i class="fas fa-sign-in-alt"></i>
+                        <span class="login-text">Abonados</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido -->
+    <main>
+        <!-- Formulario -->
+        
+        
+        <section id="form-wrapper">
+            <h2>Contacto</h2>
+
+            <form action="#" method="GET" id="formRegister" novalidate>
+                <!-- Nombre -->
+                <div class="form-control">
+                    <label for="">Nombre</label>
+                    <input type="text" name="firstname" id="firstname" required>
+                </div>
+                <div class="error" id="error-firstname"></div>
+
+                <!-- Apellido -->
+                <div class="form-control">
+                    <label for="">Apellido</label>
+                    <input type="text" name="lastname" id="lastname" required>
+                </div>
+                <div class="error" id="error-lastname"></div>
+
+                <!-- Mail -->
+                <div class="form-control">
+                    <label for="">Mail</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="error" id="error-email"></div>
+
+                <!-- Contraseña -->
+                <div class="form-control">
+                    <label for="">Contraseña</label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+                <div class="error" id="error-password"></div>
+
+                <!-- Fecha de Nacimiento -->
+                <div class="form-control">
+                    <label for="">Fecha de Nacimiento</label>
+                    <input type="date" name="birthdate" id="birthdate" required>
+                </div>
+
+
+                <!-- País -->
+                <div class="form-control">
+                    <select name="country" id="country" class="form-select">
+                        <option value="">País</option>
+                        <option value="AR">Argentina</option>
+                        <option value="BO">Bolivia</option>
+                        <option value="BR">Brasil</option>
+                        <option value="CH">Chile</option>
+                        <option value="CO">Colombia</option>
+                        <option value="EC">Ecuador</option>
+                        <option value="PY">Paraguay</option>
+                        <option value="PE">Perú</option>
+                        <option value="UY">Uruguay</option>
+                        <option value="VE">Venezuela</option>
+                    </select>
+                </div>
+
+                <!-- Términos y Condiciones -->
+                <div class="form-terms">
+                    <div class="terms">
+                        <input type="checkbox" id="terms" required>
+                        <label for="">Acepto términos y condiciones.</label>
+                    </div>
+                </div>
+
+                <!-- Botón de Registro -->
+                <button type="submit">Enviar</button>
+
+                <!-- Link de ayuda -->
+                <div class="form-help">
+                    <a href="#">Necesitás ayuda?</a>
+                </div>
+
+            </form>
+
+        </section>
+    </main>
+
+    <!-- Pie -->
+    <footer id="footer">
+        <a href="">Términos y condiciones</a>
+        <a href="">Sobre nosotros</a>
+        <a href="">Contacto</a>
+    </footer>
+
+</body>
+
+</html>
