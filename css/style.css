@@ -31,7 +31,7 @@ a {
 /* Agregar color y tamaño de fuente a la etiqueta <h2></h2> */
 h2 {
     color: #FFF;
-    font-size: 2vw;
+    font-size: 4vw;
 }
 
 p {
@@ -83,7 +83,7 @@ p {
 
 /* Selector por id que identifica la sección del banner. */
 #banner {
-    background-image: url('../img/fondo_logo_grande.jpg');
+    background-image: url('../img/fondo_logo_grande1.jpg');
     background-size: cover;
     /* determina cómo se ajusta el tamaño de la imagen de fondo para cubrir completamente el contenedor */
     background-position: center;
@@ -113,6 +113,12 @@ p {
 #planes,
 #grilla {
     text-align: center;
+}
+
+#nosotros,
+#grilla {
+    text-align: center;
+   
 }
 
 #planes h2,
@@ -207,6 +213,11 @@ p {
     margin: 120px auto;
 }
 
+.containernos {
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
 
 /* Estilo para la tarjeta del banner */
 .card-banner {
@@ -245,7 +256,7 @@ p {
 .movie-item-detail {
     bottom: -100%;
     /* Se utiliza para posicionar un elemento en relación con su contenedor padre moviéndolo hacia abajo, fuera de la vista, exactamente un 100% de la altura del contenedor. */
-    padding: 30px;
+    padding: 50px;
     max-height: 100%;
     overflow-y: auto;
     /* Se utiliza para controlar cómo se maneja el desbordamiento vertical del contenido dentro de un elemento. auto permite que aparezcan barras de desplazamiento solo cuando el contenido excede el tamaño del contenedor en el eje vertical. */
@@ -279,11 +290,11 @@ p {
 .wrapper {
     box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
     /* Se utiliza para aplicar sombras a un elemento. • El primer valor 0 representa el desplazamiento horizontal de la sombra. • El segundo valor 2px representa el desplazamiento vertical de la sombra. • El tercer valor 8px indica el desenfoque o difuminado de la sombra. • rgba(0,0,0,.1) define el color y la opacidad de la sombra. En este caso, se trata de un tono negro (0,0,0) con una opacidad del 10% (0.1).*/
-    border-radius: 10px;
+    
     width: 100%;
-    min-height: calc(150px*1.5);
+    /* min-height: calc(150px*1.5); */
     /* Establece la altura mínima del elemento en 225 píxeles, asegurando que, aunque el contenido no sea suficiente para alcanzar esa altura, el elemento nunca se mostrará con una altura menor a 225 píxeles. */
-    height: calc(150px*1.5);
+    /* height: calc(150px*1.5); */
     overflow: hidden;
     /* Se oculta el contenido que sobresale más allá de los límites del contenedor. */
 }
@@ -352,7 +363,7 @@ p {
 
 /* Estilo para las películas de Las Tendencias de hoy */
 .movie-item {
-    border-radius: 20px;
+    border-radius: 10px;
     overflow: hidden;
     position: relative;
     display: inline-block;
@@ -369,29 +380,14 @@ p {
 /* Estilo que se activa al pasar el cursor del mouse sobre el item */
 /* .movie-item:hover cuando el cursor está sobre un elemento con la clase .movie-item, se aplica una opacidad del 90% (0.9), lo que hace que el elemento se vuelva un poco más transparente. */
 .movie-item:hover {
-    opacity: 0.9;
+    opacity: 0.7;
 }
 
 /* Cambia la posición vertical (bottom) del elemento .movie-item-detail, moviéndolo hacia abajo, para revelar más información o detalles sobre el elemento de la película. */
 .movie-item:hover .movie-item-detail {
     bottom: 0;
+    
 }
-
-/* Agrega contenido adicional a un elemento 
-.movie-item-detail-subtitle::after {
-    content: '🌟';
-}*/
-
-
-/* Estilo para cambiar el color de las películas que se muestran en Top Rated */
-.movie-item-detail-title-v2:hover {
-    color: var(--primary-color);
-}
-
-/* Agrega contenido adicional a un elemento 
-.movie-item-detail-subtitle-v2::after {
-    content: '🌟';
-}*/
 
 
 /* Media Queries para dispositivos */

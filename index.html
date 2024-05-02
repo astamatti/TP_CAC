@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="./css/style.css">
 
     <!-- Favicon -->
-    <link rel="icon" href="./static/img/favicon.ico">
+    <link rel="icon" href="./img/favicon.ico">
 
     <title>CAVICU</title>
 </head>
@@ -29,7 +29,7 @@
         <nav>
             <!-- Logo -->
             <div id="logo">
-                <a href="/">
+                <a href="./index.html">
                     <!-- Más adelante se aplicarán estilos específicos al texto y se agregará un ícono -->
                     <i class="fas fa-film"></i>
                     <span class="logo-text">CAVICU</span>
@@ -72,9 +72,9 @@
         <section id="banner">
             
             <div class="container card-banner">
+                <h1>C A V I C U</h1>
                 <h1>TV Digital + Internet</h1>
-                <h2></h2>
-                <a href="./templates/contacto.html" class="btn-cac">Solicitalo Ya</a>
+                <a href="/templates/contacto.html" class="btn-cac">Solicitalo Ya</a>  
             </div>
         </section>
 
@@ -138,22 +138,24 @@
             <!-- División contenedora del título e imágenes -->
             <div class="container">
                 <h2>Grilla TV</h2>
-                <div id="list-popular">
-                    <!-- Info de las películas: mismo formato para todas -->
-                    <div class="movie-item">
-                        <div class="wrapper"> <img src="./img/grilla1.jpg" alt="" class="movie-item-img"> 
+                <div class="movie-item">
+                    <!-- <a href=""> -->
+                        <img src="./img/grilla1.jpg" alt="" class="movie-item-img">
+                        <div class="movie-item-detail">
+                            <p class="movie-item-detail-title">Grilla - TV Basica</p>
+                            <p class="movie-item-detail-subtitle">Abril - 2024</p>
                         </div>
-                        <div class="movie-item-detail-v2">
-                            <p class="movie-item-detail-title-v2">Grilla Basico Analogico-Digital</p>  
+                   <!-- </a> -->
+                </div>
+                <div class="movie-item">
+                    <!-- <a href=""> -->
+                        <img src="./img/grilla2.JPG" alt="" class="movie-item-img">
+                        <div class="movie-item-detail">
+                            <p class="movie-item-detail-title">Grilla - TV Premium</p>
+                            <p class="movie-item-detail-subtitle">Abril - 2024</p>
                         </div>
-                        <div class="movie-item">
-                            <div class="wrapper"> <img src="./img/grilla2.jpg" alt="" class="movie-item-img"> 
-                            </div>
-                            <div class="movie-item-detail-v2">
-                                <p class="movie-item-detail-title-v2">Grilla Premium DIBOX</p>  
-                            </div>
-                        </div>
-                    </div>
+                    <!-- </a> -->
+                </div>
                 </div>
             </div>
         </section>
@@ -161,9 +163,8 @@
 
     <!-- Pie -->
     <footer id="footer">
-        <a href="">Términos y condiciones</a>
-        <a href="">Sobre nosotros</a>
-        <a href="">Contacto</a>
+        <a href="./templates/nosotros.html">Sobre Nosotros</a>
+        <a href="./templates/contacto.html">Contacto</a>
     </footer>
 
 </body>

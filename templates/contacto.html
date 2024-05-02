@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="../css/style.css">
 
     <!-- Favicon -->
-    <link rel="icon" href="./static/img/favicon.ico">
+    <link rel="icon" href="../img/favicon.ico">
 
     <title>CAVICU</title>
 </head>
@@ -29,7 +29,7 @@
         <nav>
             <!-- Logo -->
             <div id="logo">
-                <a href="/">
+                <a href="../index.html">
                     <!-- Más adelante se aplicarán estilos específicos al texto y se agregará un ícono -->
                     <i class="fas fa-film"></i>
                     <span class="logo-text">CAVICU</span>
@@ -39,10 +39,10 @@
             <!-- Hipervínculos del Menú -->
             <ul class="nav-links">
                 <li>
-                    <a href="#planes">Planes</a>
+                    <a href="../index.html#planes">Planes</a>
                 </li>
                 <li>
-                    <a href="#grilla">Grilla TV</a>
+                    <a href="../index.html#grilla">Grilla TV</a>
                 </li>
                 <li>
                     <a href="./nosotros.html">Sobre Nosotros</a>
@@ -68,7 +68,7 @@
         <!-- Formulario -->
         
         
-        <section id="form-wrapper">
+        <section id="banner1">
             <h2>Contacto</h2>
 
             <form action="#" method="GET" id="formRegister" novalidate>
@@ -95,8 +95,8 @@
 
                 <!-- Contraseña -->
                 <div class="form-control">
-                    <label for="">Contraseña</label>
-                    <input type="password" name="password" id="password" required>
+                    <label for="">Telefono</label>
+                    <input type="tel" name="tel" id="tel" required>
                 </div>
                 <div class="error" id="error-password"></div>
 
@@ -106,21 +106,15 @@
                     <input type="date" name="birthdate" id="birthdate" required>
                 </div>
 
-
                 <!-- País -->
                 <div class="form-control">
                     <select name="country" id="country" class="form-select">
-                        <option value="">País</option>
-                        <option value="AR">Argentina</option>
-                        <option value="BO">Bolivia</option>
-                        <option value="BR">Brasil</option>
-                        <option value="CH">Chile</option>
-                        <option value="CO">Colombia</option>
-                        <option value="EC">Ecuador</option>
-                        <option value="PY">Paraguay</option>
-                        <option value="PE">Perú</option>
-                        <option value="UY">Uruguay</option>
-                        <option value="VE">Venezuela</option>
+                        <option value="">Barrios</option>
+                        <option value="CNT">Centro</option>
+                        <option value="NO">Norte</option>
+                        <option value="SU">Sur</option>
+                        <option value="ES">Este</option>
+                        <option value="OS">Oeste</option>
                     </select>
                 </div>
 
@@ -135,11 +129,7 @@
                 <!-- Botón de Registro -->
                 <button type="submit">Enviar</button>
 
-                <!-- Link de ayuda -->
-                <div class="form-help">
-                    <a href="#">Necesitás ayuda?</a>
-                </div>
-
+               
             </form>
 
         </section>
@@ -147,9 +137,8 @@
 
     <!-- Pie -->
     <footer id="footer">
-        <a href="">Términos y condiciones</a>
-        <a href="">Sobre nosotros</a>
-        <a href="">Contacto</a>
+        <a href="./nosotros.html">Sobre Nosotros</a>
+        <a href="./contacto.html">Contacto</a>
     </footer>
 
 </body>
