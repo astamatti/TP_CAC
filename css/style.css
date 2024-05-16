@@ -136,8 +136,8 @@ p {
     color: white;
     cursor: pointer;
     font-size: 14px;
-  
- 
+    padding-left: 30px;
+    text-decoration: none;
 }
 
 /* Estilo para el footer para cuando se pasa el mouse */
