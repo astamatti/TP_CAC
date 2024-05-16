@@ -33,7 +33,10 @@ h2 {
     color: #FFF;
     font-size: 4vw;
 }
-
+h1 {
+    color: #FFF;
+    font-size: 2vw;
+}
 p {
     color: #FFF;
     font-size: 1.3vw;
@@ -54,6 +57,7 @@ p {
 
 #logo:hover {
     animation: tilt-n-move-shaking 0.25s infinite;
+    
 }
 
 @keyframes tilt-n-move-shaking {
@@ -83,7 +87,7 @@ p {
 
 /* Selector por id que identifica la sección del banner. */
 #banner {
-    background-image: url('../img/fondo_logo_grande1.jpg');
+    background-image: url('../img/fondo_logo_grande2.jpg');
     background-size: cover;
     /* determina cómo se ajusta el tamaño de la imagen de fondo para cubrir completamente el contenedor */
     background-position: center;
@@ -132,8 +136,8 @@ p {
     color: white;
     cursor: pointer;
     font-size: 14px;
-    padding-left: 30px;
-    text-decoration: none;
+  
+ 
 }
 
 /* Estilo para el footer para cuando se pasa el mouse */
@@ -149,6 +153,13 @@ p {
     display: flex;
     height: 100px;
     width: 100%;
+}
+
+#redes {
+    text-align: center;
+
+  
+    
 }
 
 /* Estilo para Search */
@@ -167,7 +178,7 @@ p {
     font-size: 3vw;
 }
 
-.movie-item-img {
+.plan-item-img {
     width: 200px;
     height: 300px;
     object-fit: cover;
@@ -183,17 +194,71 @@ p {
 
 
 /* Modificaremos el color de fondo, color de fuente, posición del encabezado, ancho y profundidad. */
-.header {
-    background-color: transparent;
-    color: #FFF;
-    position: fixed;
-    /* Se utiliza para posicionar un elemento de forma fija en relación con la ventana del navegador, lo que significa que el elemento permanece en la misma posición, incluso cuando se desplaza la página. */
+.header{
+    background-color:var(--third-color);
+    color:#ffffff;
+    height: 12vh;
+    position:sticky;
     top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 9999;
-    /* Se utiliza comúnmente en situaciones donde tienes elementos superpuestos, como menús desplegables, ventanas emergentes, elementos flotantes, etc. Al ajustar el z-index, puedes controlar qué elementos aparecen en la parte superior y cuáles quedan ocultos detrás de otros. */
+    z-index:10;
+    .navegacion{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left:40px;
+        margin-right: 40px;
+        padding: 1.5rem 0;
+        .anclaLogo{
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 1.2rem;
+            /*animacion hover*/
+            &:hover{
+                animation: tilt-n-move-shaking 0.25s infinite;
+            }
+        }
+        .listaNav{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            .listaItem{
+                margin-right:20px;
+                .linkNav{
+                    text-decoration: none;
+                    color:#ffffff;
+                    font-weight: 700;
+                    font-size: 1.1rem;
+                    padding: 0.5rem 1rem;
+                    /* Agregar efecto de botón presionado */
+                    transition: transform 0.3s, box-shadow 0.3s;
+                    &:hover {
+                        transform: scale(0.95);
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+                        border-radius: 5px;
+                    }
+                }
+                .linkNav.iniciarSesion{
+                    background-color: #181419;
+                    color: white;
+                    
+                    border-radius: 5px;
+                     /* Agregar efecto de botón presionado */
+                     transition: transform 0.3s, box-shadow 0.3s;
+                     &:hover {
+                         background-color: var(--third-color);
+                        /* transform: scale(0.95);
+                         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);*/
+                     }
+                }
+            }
+           
+        }
+    }
+   
 }
+
+
 
 /* Estilos para el botón. */
 .btn-cac {
@@ -204,6 +269,7 @@ p {
     /* Se establece un radio de curvatura de 10 píxeles para las esquinas del elemento. */
     color: #FFF;
     cursor: pointer;
+    
 }
 
 
@@ -253,7 +319,7 @@ p {
 
 
 /* Estilo para el detalle de los ítems */
-.movie-item-detail {
+.plan-item-detail {
     bottom: -100%;
     /* Se utiliza para posicionar un elemento en relación con su contenedor padre moviéndolo hacia abajo, fuera de la vista, exactamente un 100% de la altura del contenedor. */
     padding: 50px;
@@ -272,14 +338,14 @@ p {
 }
 
 /* Estilo para el título de las películas */
-.movie-item-detail-title {
+.plan-item-detail-title {
     color: white;
     margin: 5px 0px 0px 0px;
     line-height: 1.2em;
 }
 
 /* Estilo para el subtítulo de las películas */
-.movie-item-detail-subtitle {
+.plan-item-detail-subtitle {
     color: white;
     font-size: 8px;
     margin: 3px 0px;
@@ -301,7 +367,7 @@ p {
 
 
 /* Estilo para las imágenes de Las más aclamadas */
-.movie-item-img-v2 {
+.plan-item-img-v2 {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -311,7 +377,7 @@ p {
 }
 
 /* Estilo para el detalle de Las más aclamadas */
-.movie-item-detail-v2 {
+.plan-item-detail-v2 {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -319,14 +385,14 @@ p {
 }
 
 /* Estilo para el título de Las más aclamadas */
-.movie-item-detail-title-v2 {
+.plan-item-detail-title-v2 {
     color: white;
     font-weight: bold;
     margin: 5px 0px 0px 0px;
 }
 
 /* Estilo para el subtítulo de Las más aclamadas */
-.movie-item-detail-subtitle-v2 {
+.plan-item-detail-subtitle-v2 {
     color: white;
     font-size: 12px;
     margin: 3px 0px;
@@ -362,7 +428,7 @@ p {
 }
 
 /* Estilo para las películas de Las Tendencias de hoy */
-.movie-item {
+.plan-item {
     border-radius: 10px;
     overflow: hidden;
     position: relative;
@@ -379,12 +445,12 @@ p {
 
 /* Estilo que se activa al pasar el cursor del mouse sobre el item */
 /* .movie-item:hover cuando el cursor está sobre un elemento con la clase .movie-item, se aplica una opacidad del 90% (0.9), lo que hace que el elemento se vuelva un poco más transparente. */
-.movie-item:hover {
+.plan-item:hover {
     opacity: 0.7;
 }
 
 /* Cambia la posición vertical (bottom) del elemento .movie-item-detail, moviéndolo hacia abajo, para revelar más información o detalles sobre el elemento de la película. */
-.movie-item:hover .movie-item-detail {
+.plan-item:hover .movie-item-detail {
     bottom: 0;
     
 }
@@ -478,3 +544,4 @@ p {
         padding: 2px 0px;
     }
 }
+
