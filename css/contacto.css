@@ -1,0 +1,78 @@
+.contacto__titulo {
+    text-align: center;
+    margin-block: 0.5rem;
+}
+
+.formRegister {
+    color: #fff;
+    margin-inline: auto;
+    max-width: 600px;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    &>input {
+        background-color: transparent;
+        border: 2px solid white;
+        border-radius: 25px;
+        color: white;
+        outline: none;
+        /* Se utiliza para quitar o eliminar el contorno visible que se muestra alrededor de un elemento cuando este obtiene el foco o se selecciona. */
+        padding: 4px 20px;
+        font-family: 'Nunito', sans-serif;
+    }
+
+    &>select{
+        border: 2px solid white;
+        border-radius: px;
+        outline: none;
+        /* Se utiliza para quitar o eliminar el contorno visible que se muestra alrededor de un elemento cuando este obtiene el foco o se selecciona. */
+        padding: 4px 20px;
+        font-family: 'Nunito', sans-serif;
+    
+    }
+}
+
+.form-control+.form-control {
+    margin-top: 1rem;
+}
+
+.form-control+.form-terms {
+    margin-top: 1rem;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    border-radius: 25px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 1rem;
+    margin-inline: auto;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    width: 100%;
+
+    &:hover{
+        background-color: #0056b3;
+    }
+
+    &:active{
+        background-color: #004286;
+    }
+}
+
+.form-terms+button[type="submit"] {
+    margin-top: 1rem;
+}
+
+div.error{
+    color: red;
+    font-size: 0.8rem;
+}

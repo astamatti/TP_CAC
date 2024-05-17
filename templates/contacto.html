@@ -1,126 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+            rel="stylesheet"
+        />
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+        <!-- Script de Fontawesome -->
+        <script
+            src="https://kit.fontawesome.com/f7fb471b65.js"
+            crossorigin="anonymous"
+        ></script>
 
-    <!-- Script de Fontawesome -->
-    <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
+        <!-- CSS -->
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../css/contacto.css" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="../css/style.css">
+        <!-- Favicon -->
+        <link rel="icon" href="../img/favicon.ico" />
 
-    <!-- Favicon -->
-    <link rel="icon" href="../img/favicon.ico">
+        <title>CAVICU</title>
+    </head>
 
-    <title>CAVICU</title>
-</head>
-
-<body>
-    <!-- Encabezado -->
-<!-- Encabezado -->
-<header class="header">
-    <nav class="navegacion"> 
-        <h1 id="logo"><a href="../#">CAVICU</a></h1>          
-             <ul class="listaNav">   
-                <li><a class="listaItem" href="../#planes">Planes</a></li>
-                <li><a class="listaItem" href="../#grilla">Grilla TV</a></li>
-                <li><a class="listaItem" href="nosotros.html">Sobre Nosotros</a></li>
-                <li><a class="listaItem" href="contacto.html">Contacto</a></li>
-            </ul>         
-            <ul class="listaNav">
-                <li><a class="btn-cac" href="#">
-                <i class="fas fa-sign-in-alt"></i>
-                <span class="login-text">Abonados</span>
-                </a></li>
-            </ul>            
-        </nav>
-   
-    </header>
-    <!-- Contenido -->
-    <main>
-                
-        
-        <section id="banner1">
-            <h2>Contacto</h2>
-
-            <form action="#" method="GET" id="formRegister" novalidate>
-                <!-- Nombre -->
-                <div class="form-control">
-                    <label for="">Nombre</label>
-                    <input type="text" name="firstname" id="firstname" required>
-                </div>
-                <div class="error" id="error-firstname"></div>
-
-                <!-- Apellido -->
-                <div class="form-control">
-                    <label for="">Apellido</label>
-                    <input type="text" name="lastname" id="lastname" required>
-                </div>
-                <div class="error" id="error-lastname"></div>
-
-                <!-- Mail -->
-                <div class="form-control">
-                    <label for="">Mail</label>
-                    <input type="email" name="email" id="email" required>
-                </div>
-                <div class="error" id="error-email"></div>
-
-                <!-- Contraseña -->
-                <div class="form-control">
-                    <label for="">Telefono</label>
-                    <input type="tel" name="tel" id="tel" required>
-                </div>
-                <div class="error" id="error-password"></div>
-
-                <!-- Fecha de Nacimiento -->
-                <div class="form-control">
-                    <label for="">Fecha de Nacimiento</label>
-                    <input type="date" name="birthdate" id="birthdate" required>
-                </div>
-
-                <!-- País -->
-                <div class="form-control">
-                    <select name="country" id="country" class="form-select">
-                        <option value="">Barrios</option>
-                        <option value="CNT">Centro</option>
-                        <option value="NO">Norte</option>
-                        <option value="SU">Sur</option>
-                        <option value="ES">Este</option>
-                        <option value="OS">Oeste</option>
-                    </select>
-                </div>
-
-                <!-- Términos y Condiciones -->
-                <div class="form-terms">
-                    <div class="terms">
-                        <input type="checkbox" id="terms" required>
-                        <label for="">Acepto términos y condiciones.</label>
+    <body>
+        <!-- Encabezado -->
+        <!-- Encabezado -->
+        <header class="header">
+            <nav class="navegacion">
+                <h1 id="logo"><a href="../#">CAVICU</a></h1>
+                <ul class="listaNav">
+                    <li><a class="listaItem" href="../#planes">Planes</a></li>
+                    <li>
+                        <a class="listaItem" href="../#grilla">Grilla TV</a>
+                    </li>
+                    <li>
+                        <a class="listaItem" href="nosotros.html"
+                            >Sobre Nosotros</a
+                        >
+                    </li>
+                    <li>
+                        <a class="listaItem" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                <ul class="listaNav">
+                    <li>
+                        <a class="btn-cac" href="#">
+                            <i class="fas fa-sign-in-alt"></i>
+                            <span class="login-text">Abonados</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Contenido -->
+        <main>
+            <section>
+                <h2 class="contacto__titulo">Contacto</h2>
+                <form
+                    action="#"
+                    method="GET"
+                    id="formRegister"
+                    class="formRegister"
+                    novalidate
+                >
+                    <!-- Nombre -->
+                    <div class="form-control">
+                        <label for="firstname">Nombre</label>
+                        <input
+                            type="text"
+                            name="firstname"
+                            id="firstname"
+                            required
+                        />
+                        <div class="error" id="error-firstname"></div>
                     </div>
-                </div>
+                    <!-- Apellido -->
+                    <div class="form-control">
+                        <label for="lastname">Apellido</label>
+                        <input
+                            type="text"
+                            name="lastname"
+                            id="lastname"
+                            required
+                        />
+                        <div class="error" id="error-lastname"></div>
+                    </div>
+                    <!-- Mail -->
+                    <div class="form-control">
+                        <label for="email">Mail</label>
+                        <input type="email" name="email" id="email" required />
+                        <div class="error" id="error-email"></div>
+                    </div>
+                    <!-- Contraseña -->
+                    <div class="form-control">
+                        <label for="tel">Telefono</label>
+                        <input type="tel" name="tel" id="tel" required />
+                        <div class="error" id="error-telefono"></div>
+                    </div>
+                    <!-- Fecha de Nacimiento -->
+                    <div class="form-control">
+                        <label for="birthdate">Fecha de Nacimiento</label>
+                        <input
+                            type="date"
+                            name="birthdate"
+                            id="birthdate"
+                            required
+                        />
+                        <div class="error" id="error-birthdate"></div>
+                    </div>
+                    <!-- País -->
+                    <div class="form-control">
+                        <label for="country">Barrios</label>
+                        <select name="country" id="country" class="form-select">
+                            <option value="" disabled selected>Barrios</option>
+                            <option value="CNT">Centro</option>
+                            <option value="NO">Norte</option>
+                            <option value="SU">Sur</option>
+                            <option value="ES">Este</option>
+                            <option value="OS">Oeste</option>
+                        </select>
+                        <div class="error" id="error-country"></div>
+                    </div>
+                    <!-- Términos y Condiciones -->
+                    <div class="form-terms">
+                        <div class="terms">
+                            <input type="checkbox" id="terms" name="terms" required />
+                            <label for="terms"
+                                >Acepto términos y condiciones.</label
+                            >
+                            <div class="error" id="error-terms"></div>
+                        </div>
+                    </div>
+                    <!-- Botón de Registro -->
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+        </main>
 
-                <!-- Botón de Registro -->
-                <button type="submit">Enviar</button>
-
-               
-            </form>
-
-        </section>
-        
-    </main>
-
-    <!-- Pie -->
-    <footer id="footer">
-        <a href="./nosotros.html">Sobre Nosotros</a>
-        <a href="./contacto.html">Contacto</a>
-    </footer>
-
-</body>
-
+        <!-- Pie -->
+        <footer id="footer">
+            <a href="./nosotros.html">Sobre Nosotros</a>
+            <a href="./contacto.html">Contacto</a>
+        </footer>
+    </body>
+    <script src="/js/contacto.js"></script>
 </html>
