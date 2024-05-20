@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const errorPhone = document.getElementById("error-telefono");
     const errorCountry = document.getElementById("error-country");
     const errorTerms = document.getElementById("error-terms");
+    const errorFile = document.getElementById("error-file");
     const errorBirthday = document.getElementById("error-birthdate");
     const select = document.getElementById("country");
 
@@ -88,6 +89,14 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
             delete errors.country;
             errorCountry.textContent = "";
+        }
+        
+        if (file.value.trim() === "") {
+            errorFile.textContent = "El archivo es obligatorio.";
+            errors.file = "El el archivo es obligatorio.";
+        } else {
+            delete errors.file;
+            errorFile.textContent = "";
         }
 
         Object.keys(errors).length > 0

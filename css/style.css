@@ -159,10 +159,12 @@ p {
 
 #redes {
     text-align: center;
-
-  
-    
+    display: grid;
+    grid-template-columns: 2fr 2fr; 
+    object-fit: cover;
 }
+
+
 
 /* Estilo para Search */
 #search{
@@ -182,6 +184,15 @@ p {
 
 .plan-item-img {
     width: 200px;
+    height: 300px;
+    object-fit: cover;
+    /* Especifica cómo debe ajustarse y escalarse una imagen o un video. El valor cover asegura que el contenido se ajuste al contenedor manteniendo su proporción y cubriendo todo el espacio disponible. */
+    -o-object-fit: cover;
+    /* Este prefijo es necesario para que Opera pueda reconocer y aplicar la propiedad. */
+}
+
+.map-item-img {
+    width: 400px;
     height: 300px;
     object-fit: cover;
     /* Especifica cómo debe ajustarse y escalarse una imagen o un video. El valor cover asegura que el contenido se ajuste al contenedor manteniendo su proporción y cubriendo todo el espacio disponible. */
@@ -360,39 +371,6 @@ p {
     /* Se oculta el contenido que sobresale más allá de los límites del contenedor. */
 }
 
-
-/* Estilo para las imágenes de Las más aclamadas
-.plan-item-img-v2 {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    Se utiliza para ajustar el tamaño del elemento para que llene completamente el contenedor.
-    -o-object-fit: cover;
-} */
-
-/* Estilo para el detalle de Las más aclamadas
-.plan-item-detail-v2 {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-} */
-
-/* Estilo para el título de Las más aclamadas
-.plan-item-detail-title-v2 {
-    color: white;
-    font-weight: bold;
-    margin: 5px 0px 0px 0px;
-} */
-
-/* Estilo para el subtítulo de Las más aclamadas
-.plan-item-detail-subtitle-v2 {
-    color: white;
-    font-size: 12px;
-    margin: 3px 0px;
-} */
-
-
 /* Estilo para los hipervínculos del menú */
 .nav-links a {
     text-decoration: none;
@@ -449,6 +427,18 @@ p {
     
 }
 
+.file {
+    text-align: center;
+    padding: 2px;
+}
+
+
+.social a {
+    font-size: 60px;
+
+}
+
+
 
 /* Media Queries para dispositivos */
 /*Tablets*/
@@ -474,6 +464,15 @@ p {
     }
 
     .container {
+        max-width: 720px;
+    }
+
+    .social {
+        max-width: 720px;
+    }
+    
+
+    .containernos {
         max-width: 720px;
     }
 
@@ -517,6 +516,14 @@ p {
     }
 
     .container {
+        max-width: 420px;
+    }
+
+    
+    .containernos {
+        max-width: 420px;
+    }
+    .social {
         max-width: 420px;
     }
 
