@@ -401,17 +401,18 @@ p {
 
 /* Estilo para las películas de Las Tendencias de hoy */
 .plan-item {
-    border-radius: 10px;
+    /* border-radius: 15px; */
     overflow: hidden;
     position: relative;
     display: inline-block;
     width: 200px;
     height: 300px;
     font-size: 20px;
-    cursor: pointer;
+    /* cursor: pointer; */
     transition: all 450ms;
     -webkit-transform-origin: center left;
     transform-origin: center left;
+    padding: 12px;
    
 }
 
