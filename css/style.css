@@ -89,31 +89,19 @@ p {
 #banner {
     background-image: url('../img/fondo_logo_grande2.jpg');
     background-size: cover;
-    /* determina cómo se ajusta el tamaño de la imagen de fondo para cubrir completamente el contenedor */
     background-position: center;
-    /* coloca la imagen en el centro tanto horizontal como vertical del elemento contenedor */
     height: 600px;
     box-shadow: inset 0 0 0 2000px rgba(84, 84, 84, 0.5);
-    /* establece una sombra interna actúa como un filtro. */
 }
 
 #banner1 {
     background-image: url('../img/fondo_logo_chico.png');
     background-size: cover;
-    /* determina cómo se ajusta el tamaño de la imagen de fondo para cubrir completamente el contenedor */
     background-position: center;
-    /* coloca la imagen en el centro tanto horizontal como vertical del elemento contenedor */
     height: 600px;
     box-shadow: inset 0 0 0 2000px rgba(84, 84, 84, 0.5);
-    /* establece una sombra interna actúa como un filtro. */
-
     padding: .1px;
 }
-
-/* Selector id para la sección de Top Rated, películas más top
-#top-rated {
-    margin: 50px 0px;
-} */
 
 /* Estilos para los id #popular y #top rated */
 #planes,
@@ -164,8 +152,6 @@ p {
     object-fit: cover;
 }
 
-
-
 /* Estilo para Search */
 #search{
     height: 300px;
@@ -186,18 +172,14 @@ p {
     width: 200px;
     height: 300px;
     object-fit: cover;
-    /* Especifica cómo debe ajustarse y escalarse una imagen o un video. El valor cover asegura que el contenido se ajuste al contenedor manteniendo su proporción y cubriendo todo el espacio disponible. */
     -o-object-fit: cover;
-    /* Este prefijo es necesario para que Opera pueda reconocer y aplicar la propiedad. */
 }
 
 .map-item-img {
     width: 400px;
     height: 300px;
     object-fit: cover;
-    /* Especifica cómo debe ajustarse y escalarse una imagen o un video. El valor cover asegura que el contenido se ajuste al contenedor manteniendo su proporción y cubriendo todo el espacio disponible. */
-    -o-object-fit: cover;
-    /* Este prefijo es necesario para que Opera pueda reconocer y aplicar la propiedad. */
+   -o-object-fit: cover;
 }
 
 /* Estilo que se usará desde JavaScript para que al recorrer la página el encabezado cambie de color. */
@@ -226,24 +208,21 @@ p {
             color: #ffffff;
             font-weight: 700;
             font-size: 1.2rem;
-            /*animacion hover*/
-            &:hover{
-                animation: tilt-n-move-shaking 0.25s infinite;
-            }
         }
         .listaNav{
             list-style: none;
             display: flex;
-            align-items: center;
+            align-items: center;       
             .listaItem{
                 margin-right:20px;
+                color:#ffffff;
                 .linkNav{
                     text-decoration: none;
                     color:#ffffff;
                     font-weight: 700;
                     font-size: 1.1rem;
                     padding: 0.5rem 1rem;
-                    /* Agregar efecto de botón presionado */
+                    Agregar efecto de botón presionado
                     transition: transform 0.3s, box-shadow 0.3s;
                     &:hover {
                         transform: scale(0.95);
@@ -271,18 +250,13 @@ p {
    
 }
 
-
-
 /* Estilos para el botón. */
 .btn-cac {
     background-color: var(--primary-color);
     padding: 10px;
-    /* Se aplica un espacio de 10 píxeles a los cuatro lados (arriba, abajo, izquierda y derecha) del elemento. */
     border-radius: 10px;
-    /* Se establece un radio de curvatura de 10 píxeles para las esquinas del elemento. */
     color: #FFF;
-    cursor: pointer;
-    
+    cursor: pointer;  
 }
 
 
@@ -301,10 +275,8 @@ p {
 /* Estilo para la tarjeta del banner */
 .card-banner {
     margin: 0 auto;
-    /* Se utiliza comúnmente para centrar horizontalmente un elemento dentro de su contenedor. */
     text-align: center;
     padding: 0px 160px;
-    /* Aplica un relleno de cero píxeles en la parte superior e inferior del elemento y un relleno de 160 píxeles en los lados izquierdo y derecho. */
 }
 
 /* Estilo para la barra de búsqueda */
@@ -317,7 +289,6 @@ p {
     height: 50px;
     margin: 20px 0px;
     outline: none;
-    /* Se utiliza para quitar o eliminar el contorno visible que se muestra alrededor de un elemento cuando este obtiene el foco o se selecciona. */
     padding: 0px 20px;
     width: 70%;
     font-family: 'Nunito', sans-serif;
@@ -327,18 +298,13 @@ p {
 /* Estilo para el detalle de los ítems */
 .plan-item-detail {
     bottom: -100%;
-    /* Se utiliza para posicionar un elemento en relación con su contenedor padre moviéndolo hacia abajo, fuera de la vista, exactamente un 100% de la altura del contenedor. */
     padding: 50px;
     max-height: 100%;
     overflow-y: auto;
-    /* Se utiliza para controlar cómo se maneja el desbordamiento vertical del contenido dentro de un elemento. auto permite que aparezcan barras de desplazamiento solo cuando el contenido excede el tamaño del contenedor en el eje vertical. */
     line-height: 15px;
-    /* Esta propiedad afecta al espacio vertical entre líneas de texto dentro del elemento. */
     position: absolute;
-    /* Establece la posición del elemento de manera absoluta en relación con su contenedor padre posicionado. */
     background-color: var(--third-bis-color);
     box-sizing: border-box;
-    /* Define cómo se calcula el tamaño total de un elemento, incluyendo su contenido, relleno (padding) y bordes. */
     transition: bottom 0.4s ease-in-out;
     width: 100%;
 }
@@ -360,15 +326,9 @@ p {
 
 /* Estilo para Las más aclamadas */
 .wrapper {
-    box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
-    /* Se utiliza para aplicar sombras a un elemento. • El primer valor 0 representa el desplazamiento horizontal de la sombra. • El segundo valor 2px representa el desplazamiento vertical de la sombra. • El tercer valor 8px indica el desenfoque o difuminado de la sombra. • rgba(0,0,0,.1) define el color y la opacidad de la sombra. En este caso, se trata de un tono negro (0,0,0) con una opacidad del 10% (0.1).*/
-    
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .1);  
     width: 100%;
-    /* min-height: calc(150px*1.5); */
-    /* Establece la altura mínima del elemento en 225 píxeles, asegurando que, aunque el contenido no sea suficiente para alcanzar esa altura, el elemento nunca se mostrará con una altura menor a 225 píxeles. */
-    /* height: calc(150px*1.5); */
     overflow: hidden;
-    /* Se oculta el contenido que sobresale más allá de los límites del contenedor. */
 }
 
 /* Estilo para los hipervínculos del menú */
@@ -401,14 +361,12 @@ p {
 
 /* Estilo para las películas de Las Tendencias de hoy */
 .plan-item {
-    /* border-radius: 15px; */
-    overflow: hidden;
+   overflow: hidden;
     position: relative;
     display: inline-block;
     width: 200px;
     height: 300px;
     font-size: 20px;
-    /* cursor: pointer; */
     transition: all 450ms;
     -webkit-transform-origin: center left;
     transform-origin: center left;
@@ -416,8 +374,6 @@ p {
    
 }
 
-/* Estilo que se activa al pasar el cursor del mouse sobre el item */
-/* .movie-item:hover cuando el cursor está sobre un elemento con la clase .movie-item, se aplica una opacidad del 90% (0.9), lo que hace que el elemento se vuelva un poco más transparente. */
 .plan-item:hover {
     opacity: 0.7;
 }
@@ -438,8 +394,6 @@ p {
     font-size: 60px;
 
 }
-
-
 
 /* Media Queries para dispositivos */
 /*Tablets*/
@@ -487,7 +441,6 @@ p {
         justify-content: center;
     }
 }
-
 
 
 /* CELULARES */
